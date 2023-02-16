@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>El club viejuner</h1>
+            <form>
+                <fieldset>
+              
+                   
+                <fieldset>
+                    <legend><strong>Tu:</strong></legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" tabindex="1" name="nombre" placeholder="Aquí su nombre..." required autofocus >
+                    <br><br>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" tabindex="2" name="apellido" placeholder="Aquí su apellido..." required ><br>
+                    <br>
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" tabindex="3" name="edad" placeholder="Aquí su edad..." required >
+                    <p>Sexo:
+                        <input type="radio" id="hombre" tabindex="4" name="sexo" required >
+                        <label for="hombre">Hombre</label>
+                        <input type="radio" id="mujer" tabindex="5" name="sexo" required >
+                        <label for="mujer">Mujer</label>
+                    </p>
+                    <p>Me siento viejuner:
+                        <input type="checkbox" id="si" tabindex="6" name="viejuner" required >
+                        <label for="si">Si</label>
+                        <br>
+                        <br>
+                        <label for="sobreti">Sobre ti:</label>
+                        <br>
+                        <textarea name="sobreti" id="sobreti" cols="30" rows="4" tabindex="7">Cuéntanos algo sobre ti...</textarea>
+                </fieldset>    
+                <br>
+                <fieldset>
+                    <legend><strong>Tus circunstáncias:</strong></legend>
+                    <label for="mail">Correo electrónico:</label>
+                    <input type="email" name="mail" id="mail" tabindex="8" placeholder="Aquí su mail..." required autofocus >
+                    <br><br>
+                    <label for="teléfono">Teléfono:</label>
+                    <input type="tel" name="telefono" id="telefono" tabindex="9" placeholder="Aquí su teléfono..." required autofocus>
+                </fieldset>    
+                    <br>
+            
+                    <input type="reset" value="Limpiar Formulario" tabindex="10" >
+                    <input type="submit" value="Enviar"  tabindex="11" >
+                </fieldset>
+
+            </form>
+        </section>
+        <!----SEGUNDO FORMULARIO   --->
+
+        <section>
+            <h1>Los ladronzuelos de bicicletas</h1>
+            <form>
+                <fieldset>
+              
+                   
+                <fieldset>
+                    <legend><strong>Configura tu bicicleta:</strong></legend>
+                    <label for="dia">Dia:</label>
+                    <input type="date" name="dia" id="dia" tabindex="12" required autofocus>
+                    <br><br>
+                    <label for="hora">Hora:</label>
+                    <input type="time" name="hora" id="hora" tabindex="13" required autofocus>
+                   <br>
+                    <br>
+                    <label for="color">Color:</label>
+                    <input type="color" name="color" id="color" tabindex="14" required autofocus>
+                    <label for="color">(porfavor elija el color de su bicicleta)</label>
+                    <br><br>
+                    <label for="precio">Rango de precio:</label>0
+                    <input type="range" name="precio" id="precio" min="100" max="1000" value="0" step="50" tabindex="15" required autofocus>1000
+                    <br>
+                    <p>Tipo de bicicleta:</p>
+                <ul>
+                    <li>Paseo <br><br>
+                        <input type="radio" id="paseo1" tabindex="16" name="tipobici" required autofocus>
+                        <label for="paseo1">Señorial</label>
+                    <br><br>
+                        <input type="radio" id="paseo2" tabindex="17" name="tipobici" required autofocus>
+                        <label for="paseo2">Anti-plebeyos</label>
+                    <br><br>
+                        <input type="radio" id="paseo3" tabindex="18" name="tipobici" required autofocus>
+                        <label for="paseo3">PorEncimaDelHombro</label>
+                        <br><br>
+                    </li>
+                    <li>Montaña <br><br>
+                        <input type="radio" id="mon1" tabindex="19" name="tipobici" required autofocus>
+                        <label for="mon1">Gamusinos</label>
+                    <br><br>
+                        <input type="radio" id="mon2" tabindex="20" name="tipobici" required autofocus>
+                        <label for="mon2">Hueleflores premium</label>
+                    <br><br>
+                        <input type="radio" id="mon3" tabindex="21" name="tipobici" required autofocus>
+                        <label for="mon3">Fango lover</label>
+                        <br><br>
+                    </li>
+                    <li>Carreras <br><br>
+                        <input type="radio" id="carr1" tabindex="22" name="tipobici" required autofocus>
+                        <label for="carr1">Metroymedio</label>
+                    <br><br>
+                        <input type="radio" id="carr2" tabindex="23" name="tipobici" required autofocus>
+                        <label for="carr2">3 de la tarde. Fluorescente edition</label>
+                    <br><br>
+                        <input type="radio" id="carr3" tabindex="24" name="tipobici" required autofocus>
+                        <label for="carr3">Grupitor</label>
+                        <br>
+                    </li>
+                        
+                    </li>
+                </ul>
+                <p>Accesorios:</p>
+                <!---<label for="acces">Accesorios:</label>--->
+
+                <select name="cars" id="acces" multiple  tabindex="25" required autofocus>
+                  <option value="ruedines">Ruedines</option>
+                  <option value="pegatinas">Pegatinas</option>
+                  <option value="cestita">Cestita</option>
+                  <option value="bombaaire">Bomba de aire</option>
+                  <option value="timbre">Timbre</option>
+                  <option value="foco">Foco</option>
+                </select> 
+                <br><br>
+                <label for="marca">¿Qué marca era?:</label>
+                <input list="marcas" name="marca" id="marca" tabindex="26" required autofocus>
+                
+                <datalist id="marcas">
+                  <option value="Specialized">
+                  <option value="Trek">
+                  <option value="Merida">
+                  <option value="Scott">
+                  <option value="Giant">
+                  <option value="Cube">
+                  <option value="Lapierre">
+                  <option value="Orbea">
+                  <option value="Cannondale">
+                  <option value="Bmc">
+                  <option value="Canyon">
+                  <option value="Look">
+                  <option value="Protek">
+                  <option value="Megamo">
+                  <option value="Pinarello">
+                  <option value="Bianchi">
+                  <option value="Bh">
+                  <option value="Factor">
+                  <option value="Ghost">
+                  <option value="Cervélo">
+                  <option value="Argon">
+                  </option>
+                        </option>
+                    </option>
+
+                    </option>
+
+                    </option>
+                </datalist> 
+                </fieldset>    
+                    <br>               
+                    <br>
+            
+                    <input type="reset" value="Limpiar Formulario" tabindex="26" >
+                    <input type="submit" value="Enviar"tabindex="27" >
+                </fieldset>
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>
